@@ -18,6 +18,7 @@ return {
           "bashls",         -- Bash
           "jsonls",         -- JSON
           "yamlls",         -- YAML
+          "rust_analyzer",  -- Rust
         }
       }
   },
@@ -40,6 +41,7 @@ return {
       vim.lsp.config.bashls  = {} -- Bash
       vim.lsp.config.jsonls  = {} -- JSON
       vim.lsp.config.yamlls  = {} -- YAML
+      vim.lsp.config.rust_analyzer = {} -- Rust
 
      -- Enhanced clangd setup for C/C++/CUDA
       vim.lsp.config.clangd = {
@@ -63,7 +65,7 @@ return {
           "Makefile"
         }
      }
-     vim.lsp.enable({"pyright", "lua_ls", "bashls", "jasonls", "yamlls"})
+     vim.lsp.enable({"pyright", "lua_ls", "bashls", "jsonls", "yamlls", "rust_analyzer"})
 
       -- Set up file type associations for CUDA files
       vim.filetype.add({
